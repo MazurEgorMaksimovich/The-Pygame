@@ -6,7 +6,7 @@ class The_Rocket_Game:
         pygame.init()
 
         self.screen = pygame.display.set_mode((1050, 700))
-        pygame.display.set_caption("Blue Death Screen")
+        pygame.display.set_caption("The Rocket Game")
         self.bg_color = (230, 230, 230)
 
         self.rocket = The_Rocket(self)
