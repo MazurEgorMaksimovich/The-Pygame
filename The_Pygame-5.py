@@ -39,7 +39,7 @@ class The_Spider_Rocket_Game:
             self.rocket.moving_up = True
         elif event.key == pygame.K_DOWN:
             self.rocket.moving_down = True
-        elif event.key == pygame.K_SPACE:
+        if event.key == pygame.K_SPACE:
             self._fire_bullet()
     
     def _check_keyup_events(self, event):
