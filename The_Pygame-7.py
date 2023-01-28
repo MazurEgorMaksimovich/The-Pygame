@@ -1,5 +1,6 @@
 import pygame
 import sys
+import random
 from pygame.sprite import Sprite
 
 class Stars_Potatoes_Army:
@@ -29,9 +30,9 @@ class Stars_Potatoes_Army:
     def _create_potato(self, potato_number, row_number):
         potato = Potato(self)
         potato_width, potato_height = potato.rect.size
-        potato.x = potato_width + 2 * potato_width * potato_number
+        potato.x = potato_width + 2 * potato_width * potato_number + random.randint(-15, 15)
         potato.rect.x = potato.x
-        potato.rect.y = potato_height + 2 * potato_height * row_number
+        potato.rect.y = potato_height + 2 * potato_height * row_number + random.randint(-15, 15)
         self.potatoes.add(potato)
     
     def run_game(self):
