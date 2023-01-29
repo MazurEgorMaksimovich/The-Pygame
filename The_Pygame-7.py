@@ -3,12 +3,12 @@ import sys
 import random
 from pygame.sprite import Sprite
 
-class Stars_Potatoes_Army:
+class Stars_Potatoes_Random_Army:
     def __init__(self):
         pygame.init()
 
         self.screen = pygame.display.set_mode((1050, 700))
-        pygame.display.set_caption("Stars Potatoes Army")
+        pygame.display.set_caption("Stars Potatoes Random Army")
         self.bg_color = (200, 200, 200)
 
         self.potatoes = pygame.sprite.Group()
@@ -58,5 +58,5 @@ class Potato(Sprite):
 
         self.x = float(self.rect.x)
 
-psa = Stars_Potatoes_Army()
-psa.run_game()
+psra = Stars_Potatoes_Random_Army()
+psra.run_game()
