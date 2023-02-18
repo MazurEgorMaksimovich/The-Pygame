@@ -62,6 +62,7 @@ class Settings():
             self.alien_speed = 0.75
             self.speedup_scale = 1.05
             self.bullet_allowed = 5
+            self.alien_points = 25
         if self.mode == 'middle':
             pass
         if self.mode == 'heavy':
@@ -69,3 +70,4 @@ class Settings():
             self.alien_speed = 1.25
             self.speedup_scale = 1.15
             self.bullet_allowed = 1
+            self.alien_points = 100
